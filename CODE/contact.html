@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="javascript.js"></script>
+    <script defer src="contact.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <ul>
+        <li> <marquee behavior="scroll" direction="right">Free delivery with no minimum transaction</marquee> <span class="close">x</span></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="../ASSET/LogoNavBar.png" alt=""></a>
+      </div>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" id="menu-cursor">Menu</a>
+          <ul class="dropdown-content">
+            <li><a href="bmenu.html">Menu Beverages</a></li>
+            <li><a href="dmenu.html">Menu Dessert</a></li>
+          </ul>
+        </li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <h1>Drop Us Your Email!</h1>
+    <form name="contactUs" action="" onsubmit="validateForm(event)">
+      <div class="row">
+        <div class="a">
+          <label for="fname">
+            First Name
+          </label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-fname"></p>
+          <input type="text" name="fname" id="fname"  placeholder="Write Your First name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-lname"></p>
+          <input type="text" id="lname" name="lname" placeholder="Write Your Last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="Email">Email</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-email"></p>
+          <input type="text" id="email" name="email" placeholder="Write Your Email...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="message">Message</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-message"></p>
+          <textarea id="message" name="message" placeholder="Write Your Message..." ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="submit">
+      </div>
+      <br><br><br><br><br><br><br>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-logo">  
+      <img src="../ASSET/FINAL_LOGO.png" alt="">
+    </div>
+    <div class="find-us">
+      <h3>Find Us</h3>
+      <div class="sosial"> 
+        <a href=""><img src="../ASSET/fb_logo.png" alt=""></a>
+        <a href=""><img src="../ASSET/ig_logo.png" alt=""></a>
+      </div>
+      <h4>&copy;2021 Caffein Line Company, All Right Reserved</h4>
+    </div>
+  </footer>
+</body>
+</html>

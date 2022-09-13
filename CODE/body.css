@@ -1,0 +1,117 @@
+body{
+    overflow-x: hidden;
+}
+
+.imageSliderBox{
+    padding-top: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 650px;
+}
+
+#slider{
+    margin-top: 100px;
+    width: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#slider .slides{
+    display: block;
+    width: 6000px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider .slide{
+    position: absolute;
+    list-style-type: none;
+    width: 900px;
+}
+
+.slides img{
+    width: 900px;
+}
+
+.arrow{
+    position: absolute;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.144);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(13, 115, 119, 0.8);
+}
+
+.content{
+    background-image: url(../ASSET/geometric-leaves.png);
+}
+
+.content h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #2bbca3;
+    font-weight: bold;   
+    font-style: italic;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
+.content h3{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: black;
+    font-weight: 350;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media screen and (max-width: 800px){
+    .slide img{
+        width: 100%;
+    }
+    
+    #slider, #slider .slide, .arrow{
+        width: 80%;
+    }
+
+    .prev, .next{
+        padding: 10px;
+    }
+    .content h3{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

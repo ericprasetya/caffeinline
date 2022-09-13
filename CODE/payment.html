@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="payment.css">
+    <script defer src="javascript.js"></script>
+    <script defer src="payment.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <ul>
+        <li> <marquee behavior="scroll" direction="right">Free delivery with no minimum transaction</marquee> <span class="close">x</span></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="../ASSET/LogoNavBar.png" alt=""></a>
+      </div>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" id="menu-cursor">Menu</a>
+          <ul class="dropdown-content">
+            <li><a href="bmenu.html">Menu Beverages</a></li>
+            <li><a href="dmenu.html">Menu Dessert</a></li>
+          </ul>
+        </li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Payment</h1>
+    <form action="" name="payment" onsubmit="validateForm(event)">
+      <div class="row">
+        <div class="a">
+          <label for="name">
+            Name
+          </label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-name"></p>
+          <input type="text" name="name" id="name"  placeholder="Write Your Name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="email">Email</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-email"></p>
+          <input type="text" id="email" name="email" placeholder="Write Your Email...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="city">City</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-city"></p>
+          <input type="text" id="city" name="city" placeholder="Write Your city...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="a">
+          <label for="address">Address</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-address"></p>
+          <textarea id="address" name="address" placeholder="Write Your Message..." ></textarea>
+        </div>
+      </div>
+      <div class="row method">
+        <div class="a">
+          <label for="method">Payment method</label>
+        </div>
+        <div class="b">
+          <p class="error" id="error-method"></p>
+          <div class="visaButton">
+            <input type="radio" name="method" id="visaBtn" value="visa"> <img src="../ASSET/visalogo.png" alt="">
+          </div>
+          <div class="paypalButton">
+            <input type="radio" name="method" id="paypalBtn" value="paypal"> <img src="../asset/paypallogo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="visa hide">
+        <div class="row">
+          <div class="a">
+            <label for="card-number">Card Number</label>
+          </div>
+          <div class="b">
+            <p class="error" id="error-card-number"></p>
+            <input type="text" id="card-number" name="card-number" placeholder="Write Your card number...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="a">
+            <label for="validity">Validity</label>
+          </div>
+          <div class="b">
+            <p class="error" id="error-validity"></p>
+            <input type="text" id="validity" name="validity" placeholder="MM/YY">
+          </div>
+        </div>
+        <div class="row">
+          <div class="a">
+            <label for="CVV">CVV Number</label>
+          </div>
+          <div class="b">
+            <p class="error" id="error-CVV"></p>
+            <input type="text" id="CVV" name="CVV" placeholder="###">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="error" id="error-agree"></p>
+        <input type="checkbox" name="agree" id="agree">
+        <p class="Iagree">I agree with terms and condition</p>
+      </div>
+      <div class="row">
+        <input type="submit" value="Pay">
+      </div>
+      <br><br><br><br><br><br><br>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-logo">  
+      <img src="../ASSET/FINAL_LOGO.png" alt="">
+    </div>
+    <div class="find-us">
+      <h3>Find Us</h3>
+      <div class="sosial"> 
+        <a href=""><img src="../ASSET/fb_logo.png" alt=""></a>
+        <a href=""><img src="../ASSET/ig_logo.png" alt=""></a>
+      </div>
+      <h4>&copy;2021 Caffein Line Company, All Right Reserved</h4>
+    </div>
+  </footer>
+</body>
+</html>

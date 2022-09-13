@@ -1,0 +1,20 @@
+Menu beverage:
+Coffee: 
+- Blode latte 25k coffee and milk with caramel and peanut crumble on top
+- Java Latte 25k coffee, milk, and palm sugar
+- Caramel macchiato 30k coffee, vanilla syrup, milk, with caramel sauce over ice
+- Dark cloud blended latte 30k blended coffee, milk, and dark chocolate chip with chocolate sauce on top
+
+Tea:
+- Manggo Freeze tea 25k our special tea mixed with fresh manggo and blended with ice
+- Blackberry lemoned tea 20k blackberry tea with fresh lemon
+- Low PH Tea 20k an ordinary lemon tea 
+- Berry Hibiscus Tea 20k our special hibiscus tea with berry flavour
+
+Dessert:
+- Ultimate choco dessert box 35k, 5 layer of chocolate madness
+- Till I Miss U dessert box 35k, chocolate cake with tiramisu flavour cream sauce
+- Krakatoa cake 25k, the ultimate choco lava cake
+- Red velvet cake 30k, red velvet cake covered with red velvet cookies crumble
+- cheese cake 40k, topped with jelly berry sweety
+
